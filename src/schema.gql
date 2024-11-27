@@ -1,0 +1,31 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Users {
+  idUser: Int!
+  nameUser: String!
+  firstLastNameUser: String!
+  secondLastNameUser: String!
+  addressUser: String!
+  phoneUser: String!
+}
+
+type Query {
+  getUsers: [Users!]!
+}
+
+type Mutation {
+  createUser(input: CreateOrUdpateUser!): Users!
+  deleteUser(idUser: Int!): Int!
+  updateUser(input: CreateOrUdpateUser!): Users!
+}
+
+input CreateOrUdpateUser {
+  idUser: Int
+  nameUser: String!
+  firstLastNameUser: String!
+  secondLastNameUser: String!
+  addressUser: String!
+  phoneUser: String!
+}
